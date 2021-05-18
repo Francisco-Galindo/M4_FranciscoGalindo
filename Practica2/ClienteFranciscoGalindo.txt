@@ -1,0 +1,23 @@
+Página principal
+
+	Que sea posible ver el nombre de la página, y un cubito
+
+	Una sección donde se vean las diferentes clasificaciones de posts
+
+	También deben verse los artículos en disposición de tarjetas
+
+	Es necesario un footer donde aparezca la información del dueño del sitio, esto debe estar en todas las vistas
+
+
+Vista del artículo
+	
+	Sitio donde se vea toda la información de una entrada del blog, como sus imágenes, su texto, etc.
+	
+	Debajo de eso, se van a ver los comentarios que se hagan al post.
+	
+	Ver recomendaciones de lectura
+	
+	
+Información sobre un escritor
+
+	Aquí se despliega toda la información de un autor de entradas al blog, poner su foto, nombre, forma de contacto, etc.
