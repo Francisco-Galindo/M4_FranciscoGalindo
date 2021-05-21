@@ -1,0 +1,157 @@
+/* =COLORS 
+---------------------------------------------------------------------------------------------*/
+:root {
+    --fondo: #e5e5e5;
+    --verde-boton: #21DB00;
+}
+
+.degradeGreen {
+    background: linear-gradient(90deg, #00F0DD 28.07%, rgba(108, 246, 235, 0.577894) 54.31%, rgba(255, 255, 255, 0) 73.4%, rgba(255, 255, 255, 0) 73.4%), #0CF85F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border: 0;
+}
+
+.degradeBlueTop {
+    background: linear-gradient(52.18deg, #0C8EF8 29.82%, rgba(33, 219, 0, 0.39) 128.68%);
+}
+
+.degradeBlueToBlue {
+    background: linear-gradient(180deg, #0C8EF8 0%, rgba(255, 255, 255, 0) 26.18%), linear-gradient(0.01deg, #0C8EF8 0.01%, rgba(255, 255, 255, 0) 22.83%), #00F0DD;
+}
+
+.busqueda {
+    background: var(--fondo);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+/* =TIPOGRAFIA 
+---------------------------------------------------------------------------------------------*/
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: maven_pro;
+    src: url(../fonts/maven_pro/MavenPro-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/montserrat/Montserrat-Bold.ttf);
+}
+
+/* =STRUCTURE
+---------------------------------------------------------------------------------------------*/
+body {
+    margin: 0;
+    background-color: var(--fondo);
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.linea-separadora {
+    border: 1px solid #000000;
+}
+
+
+/* =HEADER
+---------------------------------------------------------------------------------------------*/
+#header-corto {
+    display: flex;
+    width: 100vw;
+    height: 56px;
+}
+
+#div-logo {
+    display: flex;
+    width: 25%;
+}
+
+.logo-cuarto {
+    width: 224px;
+}
+
+
+
+/* =NAV
+---------------------------------------------------------------------------------------------*/
+
+
+.botones-trescuartos {
+    display: flex;
+    width: calc(100% - 224px);
+    margin-left: auto;
+    font-family: maven_pro;
+}
+
+.botones-trescuartos > a, .botones-trescuartos > input {
+    width: 25%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botones-trescuartos > a > * {
+    height: 100%;
+    width: 100%;
+}
+
+.botones-trescuartos > a > button:hover {
+    background: linear-gradient(90deg, #10FFED 28.07%, rgba(108, 246, 235, 0.577894) 54.31%, rgba(255, 255, 255, 0) 73.4%, rgba(255, 255, 255, 0) 73.4%), #1CFF6F;
+}
+
+.botones-trescuartos > a > button:active {
+    background: linear-gradient(90deg, #00E0CD 28.07%, rgba(108, 246, 235, 0.577894) 54.31%, rgba(255, 255, 255, 0) 73.4%, rgba(255, 255, 255, 0) 73.4%), #0CE84F;
+}
+
+/* =SECTION(S)
+---------------------------------------------------------------------------------------------*/
+
+.boton-verde {
+    background: linear-gradient(180deg, var(--verde-boton) 50%, rgba(22, 146, 0, 0.39) 145.14%), var(--verde-boton);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 0;
+    font-family: roboto;
+}
+
+.boton-verde:hover {
+    background: var(--verde-boton);
+}
+
+.boton-verde:active {
+    background: #11CB00;
+}
+
+/* =FOOTER
+---------------------------------------------------------------------------------------------*/
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 56px;
+    font-family: maven_pro;
+    background: linear-gradient(102.04deg, #0C8EF8 58.79%, rgba(33, 219, 0, 0.39) 120.33%);
+}
+
+#footer > div {
+    display: grid;
+    width: 50%;
+    place-content: center;
+    text-align: center;
+}
